@@ -8,6 +8,8 @@ import { ConsignaComponent } from './consigna/consigna.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TodosService } from './todos.service';
 import { TodosComponent } from './todos/todos.component';
+import { FormsModule } from '@angular/forms';
+import { DetalleComponent } from './detalle/detalle.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,9 @@ import { TodosComponent } from './todos/todos.component';
     HomeComponent,
     TodosComponent,
     ConsignaComponent,
+    DetalleComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [TodosService],
   bootstrap: [AppComponent],
 })
